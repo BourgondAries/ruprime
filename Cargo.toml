@@ -1,0 +1,17 @@
+[package]
+name = "ruprime"
+version = "0.1.0"
+authors = ["Kevin Robert Stravers <kstraver@cisco.com>"]
+
+[dependencies]
+text_io = "*"
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+debug-assertions = false
+panic = 'unwind'
+incremental = false
+overflow-checks = false
+target-cpu = 'native'
